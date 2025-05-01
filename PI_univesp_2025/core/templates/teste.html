@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Formulário de Agendamento</title>
+<style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 30px;
+    }
+ 
+    .container {
+      max-width: 500px;
+      margin: auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+ 
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+ 
+    label {
+      display: block;
+      margin-top: 15px;
+      color: #333;
+    }
+ 
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+ 
+    button {
+      margin-top: 20px;
+      padding: 12px;
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+ 
+    button:hover {
+      background-color: #45a049;
+    }
+ 
+    .mensagem {
+      margin-top: 20px;
+      text-align: center;
+      color: green;
+      font-weight: bold;
+    }
+</style>
+</head>
+<body>
+ 
+  <div class="container">
+<h2>Agendamento de Serviço</h2>
+<form id="formAgendamento">
+<label for="nome">Nome:</label>
+<input type="text" id="nome" required>
+ 
+      <label for="telefone">Telefone:</label>
+<input type="telefone" id="telefone" required>
+ 
+      <label for="data">Data do Agendamento:</label>
+<input type="date" id="data" required>
+ 
+      <label for="hora">Hora:</label>
+<input type="time" id="hora" required>
+ 
+      <button type="submit">Agendar</button>
+<div class="mensagem" id="mensagemSucesso"></div>
+</form>
+</div>
+ 
+  <script>
+    const form = document.getElementById('formAgendamento');
+    const mensagemSucesso = document.getElementById('mensagemSucesso');
+ 
+    form.addEventListener('submit', function(event) {
+      event.preventDefault(); // impede o envio real
+ 
+      const nome = document.getElementById('nome').value;
+      const telefone = document.getElementById('telefone').value;
+      const data = document.getElementById('data').value;
+      const hora = document.getElementById('hora').value;
+ 
+      if (nome && email && data && hora) {
+        mensagemSucesso.textContent = `Agendamento realizado com sucesso para ${data} às ${hora}!`;
+        form.reset();
+      } else {
+        mensagemSucesso.textContent = 'Por favor, preencha todos os campos.';
+        mensagemSucesso.style.color = 'red';
+      }
+    });
+</script>
+ 
+</body>
+</html>

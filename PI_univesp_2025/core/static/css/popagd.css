@@ -1,0 +1,73 @@
+.container_popagd {
+    max-width: 500px;
+    margin-top: 2%;
+    margin-left: 24%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    top: 12%;
+  }
+
+  .container_popdlt {
+    max-width: 500px;
+    margin-top: 2%;
+    margin-left: 24%;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    justify-content: center;
+    top: 12%;
+  }
+
+h2 {
+    text-align: center;
+    color: #333;
+  }
+
+  label {
+    display: block;
+    margin-top: 15px;
+    color: #0f0f0f;
+  }
+
+   select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .btnpopagd {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: #1c4f9b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .btnpopdlt {
+    margin-top: 20px;
+    padding: 12px;
+    width: 100%;
+    background-color: #1c4f9b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  .mensagem {
+    margin-top: 20px;
+    text-align: center;
+    color: #1c4f9b;
+    font-weight: bold;
+  }
